@@ -17,5 +17,17 @@ public static void main(String arg[]) throws Exception
     }
     System.out.println(text);
 
+    FileReader file1= new FileReader("C:\\Users\\kiran\\Desktop\\Readme1.htm");
+    BufferedReader reader1=new BufferedReader(file1);
+    String line1=reader1.readLine();
+    String text1="";
+    while(line1!=null)
+    {
+     text1+=line1;
+     line1=reader1.readLine();
+    }
+    System.out.println(text1);
+
+
 }
 }
